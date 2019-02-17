@@ -95,7 +95,7 @@ class App extends Component {
     return (
       <div className="row App mt-5">
         {/* le masque */}
-        <div className="col-lg-6 border-right">
+        <div className="col-lg-7 border-right">
           <div className="mask mt-5">
             {this.state.word.map((elt, key) => (
               <Mot myLetter={elt.myLetter} isFind={elt.isFind} key={key} />
@@ -137,7 +137,7 @@ class App extends Component {
             </div>
           )}
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-5">
           {/*Image du pendu */}
           <div className="mt-5">
             <img src={require(`./img/etapes${this.state.guessecount}.jpg`)} />
